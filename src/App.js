@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 import Chat from './Chat';
 import Login from './Login';
 import { useDispatch, useSelector } from 'react-redux';
-import userSlice, { selectUser } from './features/userSlice';
+import { selectUser } from './features/userSlice';
 import { useEffect } from 'react';
 import { auth } from './firebase';
 import { login,logout } from './features/userSlice'
@@ -16,6 +16,7 @@ const dispatch = useDispatch();
 
 useEffect(() => {
   auth.onAuthStateChanged((authUser)=>{
+    console.log("authuser",authUser);
     if(authUser){
       dispatch(login({
         uid: authUser.uid,
