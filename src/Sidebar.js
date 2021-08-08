@@ -47,7 +47,7 @@ function Sidebar() {
                 <div className="sidebar__channelheader">
                     <div className="sidebar__header">
                         <ExpandMoreIcon/>
-                        <h4>Text Channels</h4>
+                        <h4>Chat Rooms</h4>
                     </div>
                     <AddIcon 
                     className="sidebar__addchannel"

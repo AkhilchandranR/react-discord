@@ -7,12 +7,12 @@ import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
 import EditLocationIcon from '@material-ui/icons/EditLocation';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 
-function ChatHeader() {
+function ChatHeader({ channelName }) {
     return (
         <div className="chatheader">
             <div className="chatheader__left">
                 <h3><span className="chatheader__hash">#</span>
-                Youtube</h3>
+                {channelName}</h3>
             </div>
             <div className="chatheader__right">
                 <NotificationsIcon/>
